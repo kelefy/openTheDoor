@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27BB872D1E643BE600CE241A"
-               BuildableName = "OpenTheDoor.app"
-               BlueprintName = "OpenTheDoor"
+               BuildableName = "&#x697c;&#x5973;&#x90ce;.app"
+               BlueprintName = "&#x697c;&#x5973;&#x90ce;"
                ReferencedContainer = "container:OpenTheDoor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -53,8 +53,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27BB872D1E643BE600CE241A"
-            BuildableName = "OpenTheDoor.app"
-            BlueprintName = "OpenTheDoor"
+            BuildableName = "&#x697c;&#x5973;&#x90ce;.app"
+            BlueprintName = "&#x697c;&#x5973;&#x90ce;"
             ReferencedContainer = "container:OpenTheDoor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27BB872D1E643BE600CE241A"
-            BuildableName = "OpenTheDoor.app"
-            BlueprintName = "OpenTheDoor"
+            BuildableName = "&#x697c;&#x5973;&#x90ce;.app"
+            BlueprintName = "&#x697c;&#x5973;&#x90ce;"
             ReferencedContainer = "container:OpenTheDoor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,8 +95,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27BB872D1E643BE600CE241A"
-            BuildableName = "OpenTheDoor.app"
-            BlueprintName = "OpenTheDoor"
+            BuildableName = "&#x697c;&#x5973;&#x90ce;.app"
+            BlueprintName = "&#x697c;&#x5973;&#x90ce;"
             ReferencedContainer = "container:OpenTheDoor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

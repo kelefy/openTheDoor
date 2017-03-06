@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27BB872E1E643BE600CE241A /* OpenTheDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTheDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27BB872E1E643BE600CE241A /* 楼女郎.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "楼女郎.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BB87321E643BE600CE241A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27BB87341E643BE600CE241A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27BB87351E643BE600CE241A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		27BB872F1E643BE600CE241A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27BB872E1E643BE600CE241A /* OpenTheDoor.app */,
+				27BB872E1E643BE600CE241A /* 楼女郎.app */,
 				27BB87471E643BE600CE241A /* OpenTheDoorTests.xctest */,
 				27BB87521E643BE600CE241A /* OpenTheDoorUITests.xctest */,
 			);
@@ -143,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27BB872D1E643BE600CE241A /* OpenTheDoor */ = {
+		27BB872D1E643BE600CE241A /* 楼女郎 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27BB875B1E643BE600CE241A /* Build configuration list for PBXNativeTarget "OpenTheDoor" */;
+			buildConfigurationList = 27BB875B1E643BE600CE241A /* Build configuration list for PBXNativeTarget "楼女郎" */;
 			buildPhases = (
 				27BB872A1E643BE600CE241A /* Sources */,
 				27BB872B1E643BE600CE241A /* Frameworks */,
@@ -155,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = OpenTheDoor;
+			name = "楼女郎";
 			productName = OpenTheDoor;
-			productReference = 27BB872E1E643BE600CE241A /* OpenTheDoor.app */;
+			productReference = 27BB872E1E643BE600CE241A /* 楼女郎.app */;
 			productType = "com.apple.product-type.application";
 		};
 		27BB87461E643BE600CE241A /* OpenTheDoorTests */ = {
@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					27BB872D1E643BE600CE241A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5S4L29TXXC;
 						ProvisioningStyle = Automatic;
 					};
 					27BB87461E643BE600CE241A = {
@@ -234,7 +235,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27BB872D1E643BE600CE241A /* OpenTheDoor */,
+				27BB872D1E643BE600CE241A /* 楼女郎 */,
 				27BB87461E643BE600CE241A /* OpenTheDoorTests */,
 				27BB87511E643BE600CE241A /* OpenTheDoorUITests */,
 			);
@@ -300,12 +301,12 @@
 /* Begin PBXTargetDependency section */
 		27BB87491E643BE600CE241A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27BB872D1E643BE600CE241A /* OpenTheDoor */;
+			target = 27BB872D1E643BE600CE241A /* 楼女郎 */;
 			targetProxy = 27BB87481E643BE600CE241A /* PBXContainerItemProxy */;
 		};
 		27BB87541E643BE600CE241A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27BB872D1E643BE600CE241A /* OpenTheDoor */;
+			target = 27BB872D1E643BE600CE241A /* 楼女郎 */;
 			targetProxy = 27BB87531E643BE600CE241A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -424,9 +425,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = OpenTheDoor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kong.OpenTheDoor;
+				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,9 +438,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = OpenTheDoor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kong.OpenTheDoor;
+				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -500,13 +505,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27BB875B1E643BE600CE241A /* Build configuration list for PBXNativeTarget "OpenTheDoor" */ = {
+		27BB875B1E643BE600CE241A /* Build configuration list for PBXNativeTarget "楼女郎" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27BB875C1E643BE600CE241A /* Debug */,
 				27BB875D1E643BE600CE241A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27BB875E1E643BE600CE241A /* Build configuration list for PBXNativeTarget "OpenTheDoorTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +521,7 @@
 				27BB87601E643BE600CE241A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27BB87611E643BE600CE241A /* Build configuration list for PBXNativeTarget "OpenTheDoorUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +530,7 @@
 				27BB87631E643BE600CE241A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
