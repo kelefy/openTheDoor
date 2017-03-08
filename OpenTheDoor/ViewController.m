@@ -28,7 +28,6 @@
     back.image = [UIImage imageNamed:@"backgroundimg"];
     [self.view addSubview:back];
     
-    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     btn.frame = CGRectMake(0, self.view.frame.size.height-80, self.view.frame.size.width, 50);
     [btn addTarget:self action:@selector(showNumberInput) forControlEvents:UIControlEventTouchUpInside];
@@ -116,14 +115,14 @@
 {
     NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
     NSTimeInterval a=[dat timeIntervalSince1970]*1000;
-    NSString *timeString = [NSString stringWithFormat:@"%ld", (long)a];
-    
+    long long timeint = a;
+    NSString *timeString = [NSString stringWithFormat:@"%lld",(long long)timeint];
     NSString *replaceStr = [NSString stringWithFormat:@"%@000", [timeString substringToIndex:timeString.length-3]];
-    NSString *str = [NSString stringWithFormat:@"10214|%@|%@|440106B008",self.phoneNumber,replaceStr];
+    NSString *str = [NSString stringWithFormat:@"8002|%@|%@|440106B008",self.phoneNumber,replaceStr];
     
     if(!_qcImv)
     {
-        self.qcImv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width*0.45f, self.view.frame.size.width*0.45f)];
+        self.qcImv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width*0.43f, self.view.frame.size.width*0.43f)];
         self.qcImv.center = self.view.center;
         [self.view addSubview:self.qcImv];
         self.qcImv.userInteractionEnabled = YES;
@@ -138,11 +137,6 @@
     }
     
     self.qcImv.image = [self imageWithQrCode:str size:self.qcImv.frame.size];
-    
-}
-
--(void)dealloc
-{
     
 }
 
