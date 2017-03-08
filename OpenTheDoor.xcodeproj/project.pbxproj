@@ -207,7 +207,7 @@
 				TargetAttributes = {
 					27BB872D1E643BE600CE241A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = M5Q72LN99N;
+						DevelopmentTeam = 5S4L29TXXC;
 						ProvisioningStyle = Automatic;
 					};
 					27BB87461E643BE600CE241A = {
@@ -425,11 +425,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M5Q72LN99N;
+				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = OpenTheDoor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mix-colours.OpenDoor";
+				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -438,11 +438,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M5Q72LN99N;
+				DEVELOPMENT_TEAM = 5S4L29TXXC;
 				INFOPLIST_FILE = OpenTheDoor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mix-colours.OpenDoor";
+				PRODUCT_BUNDLE_IDENTIFIER = net.xtion.enterpriseCertificateTrust;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
