@@ -82,6 +82,7 @@
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
 //        textField.keyboardType = UIKeyboardTypeNumberPad;
         textField.keyboardType = UIKeyboardTypePhonePad;
+        textField.placeholder = @"手机号";
     }];
     [self presentViewController:alert animated:YES completion:nil];
 }
