@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<UIAlertViewDelegate>
+@interface ViewController ()
 
 @property (copy, nonatomic) NSString *phonenumberKey;
 
@@ -32,9 +32,12 @@
     btn.frame = CGRectMake(0, self.view.frame.size.height-80, self.view.frame.size.width, 50);
     [btn addTarget:self action:@selector(showNumberInput) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     [self requestPhoneNumber];
-    
 }
 
 -(void)requestPhoneNumber
@@ -58,10 +61,28 @@
 
 -(void)showNumberInput
 {
-
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"请输入手机号码" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil];
-    [alert setAlertViewStyle:UIAlertViewStylePlainTextInput];
-    [alert show];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"请输入您的手机号码" preferredStyle:UIAlertControllerStyleAlert];
+    // 添加按钮
+    __weak typeof(alert) weakAlert = alert;
+    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+//        NSLog(@"点击了确定按钮--%@-%@", [weakAlert.textFields.firstObject text], [weakAlert.textFields.lastObject text]);
+        if(weakAlert.textFields.firstObject.text.length>0)
+        {
+            self.phoneNumber = weakAlert.textFields.firstObject.text;
+            NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+            [userDefault setObject:self.phoneNumber forKey:_phonenumberKey];
+            [self loadQcImg];
+        }
+    }]];
+//    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+////        NSLog(@"点击了取消按钮");
+//    }]];
+    
+    // 添加文本框
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+    }];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 
@@ -92,23 +113,6 @@
     UIImage *qrCodeImage = [UIImage imageWithCGImage:imageRef];
     
     return qrCodeImage;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    UITextField *txt = [alertView textFieldAtIndex:0];
-    if(txt.text.length>0)
-    {
-        self.phoneNumber = txt.text;
-        NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-        [userDefault setObject:self.phoneNumber forKey:_phonenumberKey];
-        [self loadQcImg];
-    }
 }
 
 -(void)loadQcImg
