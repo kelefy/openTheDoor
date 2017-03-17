@@ -80,7 +80,8 @@
     
     // 添加文本框
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.keyboardType = UIKeyboardTypeNumberPad;
+//        textField.keyboardType = UIKeyboardTypeNumberPad;
+        textField.keyboardType = UIKeyboardTypePhonePad;
     }];
     [self presentViewController:alert animated:YES completion:nil];
 }
