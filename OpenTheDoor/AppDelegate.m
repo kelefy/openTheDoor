@@ -12,6 +12,9 @@
 
 @interface AppDelegate ()
 
+//当前亮度
+@property CGFloat currentLight;
+
 @end
 
 @implementation AppDelegate
@@ -22,7 +25,8 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [ViewController new];
     [self.window makeKeyAndVisible];
-    
+    self.currentLight = [[UIScreen mainScreen] brightness];
+    [[UIScreen mainScreen] setBrightness:0.9];
     [Bugly startWithAppId:@"31354da0d6"];
     
     return YES;
@@ -32,6 +36,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    [[UIScreen mainScreen] setBrightness:_currentLight>0.1f?_currentLight:0.5f];
 }
 
 
@@ -47,6 +52,7 @@
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[UIScreen mainScreen] setBrightness:0.9];
     
 }
 
